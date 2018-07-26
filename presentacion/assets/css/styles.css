@@ -1,3 +1,52 @@
+.sidebar{
+    position: absolute;
+    width: 250px; /*ancho*/
+    height: 100%; /*alto*/
+    background-color: black; /*fondo*/
+    /*color de las letras en general exceptuando
+    los anclajes (<a></a>)*/
+    color: white;
+}
+.sidebar a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+.sidebar ul{
+    list-style: none;
+    /* crean relleno. dentro de los contenedores
+    valgame la redundancia */
+    padding: 0;
+    /* sirve para crear espacio en los margenes*/
+    margin: 0;
+}
+.sidebar h1{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    /* genera un gradiente de color */
+    background: linear-gradient(rgb(90, 0, 0),rgb(80, 0, 0),
+    rgb(70, 0, 0),rgb(60, 0, 0),rgb(50, 0, 0),rgb(50, 0, 0),black);
+}
+.sidebar li{
+    /* genera bordes */
+    border: 1px solid rgb(30, 0, 0);
+    transition: border .3s;
+}
+.sidebar li:hover{
+    background: rgb(40, 0, 0);
+    border-left: 5px solid rgb(100, 0, 0);
+}
 .contenedor{
-    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(to bottom right,rgb(3, 88, 187),rgb(4, 67, 140),rgb(2, 0, 70),rgb(2, 0, 60));
+}
+.menu-bar{
+    cursor: pointer;
+}
+.abrir{
+    transform: translateX(250px);
 }
